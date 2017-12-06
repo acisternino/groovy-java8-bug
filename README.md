@@ -3,12 +3,12 @@
 Minimal project that shows a bug in the current (as of Dec. 2017) implementation
 of the `groovy-eclipse-compiler` available from https://github.com/groovy/groovy-eclipse.
 
-Simply run
+Bug description: "[Using source 1.8 triggers a Java 9 dependency and fails compilation](https://github.com/groovy/groovy-eclipse/issues/401)"
 
+To reproduce simply run
 ```
 mvn clean compile
 ```
-
 and the bug will be triggered.
 
 It seems something is trying to load the `javax.lang.model.element.ModuleElement`
