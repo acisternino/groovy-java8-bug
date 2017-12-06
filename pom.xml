@@ -48,6 +48,15 @@
                         <artifactId>groovy-eclipse-batch</artifactId>
                         <version>2.4.13-01</version>
                     </dependency>
+                    <dependency>
+                        <!-- See https://github.com/groovy/groovy-eclipse/issues/401 -->
+                        <!-- https://github.com/eclipse/eclipse.jdt.core/tree/master/org.eclipse.jdt.compiler.tool/lib -->
+                        <groupId>eclipse.jdt.core</groupId>
+                        <artifactId>java9api</artifactId>
+                        <version>1.0</version>
+                        <scope>system</scope>
+                        <systemPath>${project.basedir}/lib/java9api.jar</systemPath>
+                    </dependency>
                 </dependencies>
             </plugin>
         </plugins>
